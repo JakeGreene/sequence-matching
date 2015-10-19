@@ -6,7 +6,7 @@ Building Sequences
 -----------------
 Much like the sequence `::` operator, all sequences now have the `:+:` operator.
 
-`1 :+: 2 :+: SNil` will produce `List(1, 2)` as if using `1 :: 2 :: Nil`. The difference is, this can be used by any `Seq`.
+`1 :+: 2 :+: Nil` will produce `List(1, 2)` as if using `1 :: 2 :: Nil`. The difference is, this can be used by any `Seq`.
 
 ```
 1 :+: 2 :+: Queue(3) //Will produce Queue(1, 2, 3)
